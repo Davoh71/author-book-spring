@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Add Author
+<form action="/author/save" method="post" >
+    <input type="text" name="name">Name<br>
+    <input type="text" name="surname">Surname<br>
+    <input type="text" name="email" >Email<br>
+    <select name="gender">
+        <option value="MALE">Male</option>
+        <option value="FEMALE">Feale</option>
+    </select><br>
+    <textarea name="description"></textarea>Description<br>
+    <input type="submit" value="Save"/>
+</form>
+<a href="/author">All Author</a><br><br>
+Add Book
+<form action="/book/save" method="post">
+    <input type="text" namr="title">Title<br>
+    <textarea name="description"></textarea>Description<br>
+    <input type="text" name="price">Price<br>
+    <select name="authoe.id">
+        <option value=""></option>
+    </select><br>
+    <input type="submit" value="Save">
+
+</form>
+<a href="/book">All Book</a>
+
+</body>
+</html>

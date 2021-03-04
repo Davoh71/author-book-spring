@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/book/savee" method="post" >
+    <input type="hidden" name="id" th:if="${books != null}" th:value="${books.id}">
+    <input type="text" name="name" th:value="${books.title}">Title<br>
+    <textarea  name="description"></textarea>Description<br>
+    <input type="text" name="email" th:value="${books.price} ">Price<br>
+
+    <input type="submit" value="Save"/>
+</form></form>
+</body>
+</html>
